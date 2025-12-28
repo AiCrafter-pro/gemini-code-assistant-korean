@@ -1,0 +1,74 @@
+{
+  "name": "gemini-code-assistant-korean-aicrafter",
+  "displayName": "Gemini Code Assistant Korean - AiCrafter",
+  "description": "Korean-optimized Gemini Code assistant for enhanced productivity - Specialized extension for Korean developers with IME composition detection",
+  "version": "1.0.4",
+  "publisher": "aicrafter",
+  "icon": "icon.jpg",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "gemini",
+    "ai",
+    "assistant",
+    "korean",
+    "productivity",
+    "code",
+    "chat"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gemini-korean.showInput",
+        "title": "Gemini Code Assistant Korean 열기"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "gemini-korean-assistant",
+          "name": "GEMINI CODE ASSISTANT KOREAN - AICRAFTER",
+          "type": "webview",
+          "icon": "$(terminal)",
+          "visibility": "visible",
+          "when": "true"
+        }
+      ]
+    },
+    "terminal": {
+      "profiles": [
+        {
+          "id": "gemini-terminal",
+          "title": "Gemini Terminal"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aicrafter/gemini-code-assistant-korean"
+  },
+  "homepage": "https://github.com/aicrafter/gemini-code-assistant-korean#readme",
+  "bugs": {
+    "url": "https://github.com/aicrafter/gemini-code-assistant-korean/issues"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+{
+    // This setting will be active only for this workspace.
+    // It attempts to prevent the global Claude CLI from interfering with the debug session.
+    "claude.code.ssed.port": null,
+    "claude.code.enableIdeIntegration": false
+}

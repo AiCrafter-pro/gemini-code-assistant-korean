@@ -1,0 +1,15 @@
+# Environment variables
+.env
+
+# Dependencies
+/node_modules
+/out
+
+# Build artifacts
+*.vsix
+
+# Debug and summary files
+/debug
+IMPORTANT_NOTICE.md
+gemini_conversion_summary.md
+gemini_project_final_summary.md
